@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Random Maze Generator</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1 class="title">Random Maze Generator</h1>
+  <canvas id="mazeCanvas"></canvas>
+    <div id="mazeControls">
+        <label for="mazeWidth">Width</label>
+        <input type="number" id="mazeWidth" value="20" min="1" max="99" step="2" />
+        <label for="mazeHeight">Height</label>
+        <input type="number" id="mazeHeight" value="20" min="1" max="99" step="2" />
+        <label for="mazeCellSize">Cell Size</label>
+        <input type="number" id="cellSize" value="20" min="1" max="100" />
+        <button id="generateMaze">Generate Maze</button>
+        <button id="printMaze">Print Maze</button>
+        <!-- <button id="solveMaze">Solve Maze</button>
+        <button id="clearMaze">Clear Maze</button>
+        <button id="saveMaze">Save Maze</button> -->
+    </div>
+  <script type="module" src="model/maze.js"></script>
+  <script type="module" src="view/mazeView.js"></script>
+  <script type="module" src="controller/mazeController.js"></script>
+  <script type="module" >
+    // Create an instance of the MazeController and initialize it
+    import MazeController from './controller/mazeController.js';
+    const mazeController = new MazeController();
+    mazeController.init();
+  </script>
+</body>
+</html>

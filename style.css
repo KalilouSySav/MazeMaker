@@ -1,0 +1,86 @@
+#mazeCanvas {
+    border: 1px solid black;
+  }
+
+  /* Style du corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Style du titre */
+.title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style du canvas du labyrinthe */
+#mazeCanvas {
+    border: 1px solid #333;
+    background-color: white;
+}
+
+/* Style de la section des contrôles du labyrinthe */
+#mazeControls {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Style des labels des contrôles */
+label {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+/* Style des input des contrôles */
+input[type="number"] {
+    width: 50px;
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+/* Style des boutons */
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+/* Style spécifique pour le bouton "Generate Maze" */
+#generateMaze {
+    background-color: #4caf50;
+}
+
+/* Style spécifique pour le bouton "Print Maze" */
+#printMaze {
+    background-color: #ff9800;
+}
+
+/* Ajoutez d'autres styles spécifiques pour les autres boutons si nécessaire */
+
+/* Style des boutons au survol */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Style des boutons en état désactivé */
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
